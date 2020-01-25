@@ -21,7 +21,7 @@ let myPadSchema = mongoose.Schema({
 })
 
 let Estimate = mongoose.model('Estimate', myPadSchema)
-
+// 
 let save = (data) => {
   
   var myPadSchemaData = data;
@@ -36,5 +36,6 @@ let save = (data) => {
 }
 
 // calling function to add data to DB
-save(data);
+// save(data);
+
 
