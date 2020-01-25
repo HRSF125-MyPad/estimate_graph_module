@@ -1,15 +1,23 @@
 {
-  "name": "",
+  "name": "myPad",
   "version": "",
   "description": "",
-  "author": "",
+  "author": "Noel Mendoza",
   "license": "",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
+    "database": "nodemon database/index.js"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "mongoose": "^5.8.9",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "webpack": "^4.41.5"
   },
   "devDependencies": {
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
