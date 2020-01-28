@@ -1,13 +1,15 @@
 {
-  "name": "myPad",
+  "name": "",
   "version": "",
   "description": "",
-  "author": "Noel Mendoza",
+  "author": "",
   "license": "",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
+    "webpack": "webpack -d --watch",
+    "server": "nodemon server/index.js",
     "database": "nodemon database/index.js"
   },
   "dependencies": {
@@ -15,11 +17,16 @@
     "express": "^4.17.1",
     "faker": "^4.1.0",
     "mongoose": "^5.8.9",
+    "morgan": "^1.9.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "webpack": "^4.41.5"
+    "webpack": "^2.2.1"
   },
   "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
   }
 }
