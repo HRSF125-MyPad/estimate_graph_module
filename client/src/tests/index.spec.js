@@ -1,19 +1,18 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import App from '../index.jsx';
+// import App from '../index.jsx';
 
-let wrapper;
+// let wrapper;
 
-beforeEach(() => {
-  wrapper = shallow(<App />);
-});
+// beforeEach(() => {
+//   wrapper = shallow(<App />);
+// });
 
-describe('first enzyme test', () => {
-  it('Should render without crashing', () => {
-    expect(wrapper.find('h1')).toHaveLength(1);
-  });
-})
+// describe('first enzyme test', () => {
+//   it('Should render without crashing', () => {
+//     expect(wrapper.find('h1')).toHaveLength(1);
+//   });
+// })
 
 
 // sample test

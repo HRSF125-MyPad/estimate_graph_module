@@ -1,22 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Graph from './components/graph.jsx';
 
-class App extends React.Component {
-  constructor() {
-    super();
-  }
+ReactDOM.render(<Graph/>, document.getElementById('app'));
 
-  render() {
-    return (
-      <div>
-        <div>
-          <h1>Hello World!</h1>
-        </div>
-      </div>
-    );
-  }
-}
 
-// ReactDOM.render(<App/>, document.getElementById('app'));
-
-export default App; 
