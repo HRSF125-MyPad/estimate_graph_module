@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 class Graph extends React.Component {
   constructor(props) {
@@ -6,6 +7,24 @@ class Graph extends React.Component {
     this.state = {
     }
   }
+
+  componentDidMount() {
+    this.getEstimate();
+  }
+
+  getEstimate () {
+    axios.get('/homes')
+      .then((response) => {
+        console.log('Data:', response.data)
+        //this.setState({})
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+  }
+
+
 
   render() {
     return (
