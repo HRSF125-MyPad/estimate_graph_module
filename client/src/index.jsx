@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Graph from './components/graph.jsx';
+import App from './components/App.jsx';
 
-ReactDOM.render(<Graph/>, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
 
 
