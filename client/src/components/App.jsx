@@ -1,9 +1,28 @@
 import React from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
+// 
 
 const Wrapper = styled.div`
   font-family: Libre Franklin;
+  width: 670px;
+  height: 264px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.375rem;
+    padding-left: 0;
+    width: 100%;
+    word-spacing: .125rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    color: #333;
+
+  }
 
   svg {
     background: white;
@@ -18,8 +37,9 @@ const Wrapper = styled.div`
     } 
 
     g {
-     
+      
       line {
+        color: #999;
         stroke: rgb(226, 226, 226);
         fill: transparent;
         stroke-width: 1;
@@ -27,7 +47,6 @@ const Wrapper = styled.div`
 
         text {
           text-anchor: "middle";
-          color: #999999;
           font-size: 14px;
           /* fill: rgb(153, 153, 153); */
           font-family: Libre Franklin;
@@ -41,6 +60,39 @@ const Wrapper = styled.div`
     }
    
  }
+`
+
+const LinkHomeFacts = styled.div`
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  padding-bottom: 1rem;
+
+  span {
+    cursor: pointer;
+    color: #0c82a5;
+
+  }
+
+`
+
+const LinkCreateOwner = styled.div` 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  padding-bottom: 1rem;
+
+  span {
+    cursor: pointer;
+    color: #0c82a5;
+  }
+
 `
 
 const EstimateValueHeader = styled.div`
@@ -83,6 +135,9 @@ const EstimateValueHeader = styled.div`
   }
 `
 const Heading = styled.div`
+  float: left;
+  width: 370px;
+  height: 18px;
   margin: 0;
   padding: 0;
   border: 0;
@@ -105,28 +160,21 @@ const Heading = styled.div`
 `
 
 const Span1 = styled.span`
-  margin: 0;
-  padding: 0;
-  border: 0;
+  float: right;
   font-size: 100%;
-  font-family: Libre Franklin;
-  border: 0;
-  font-size: 100%;
-  text-align: right;
-  vertical-align: baseline;
-  min-width: 105px;
+  text-align: left;
+  vertical-align: bottom;
   color: #999;
   padding: .5rem 0;
   border-bottom: .125rem solid transparent;
   transition: all .2s ease-out 0s;
   cursor: pointer;    
-  user-select: none;
+  /* user-select: none; */
 `
 
 const Span2 = styled.span`
-  margin: 0;
-  padding: 0;
-  border: 0;
+  position: relative;
+  float: right;
   font-size: 100%;
   text-align: right;
   font: inherit;
@@ -167,6 +215,14 @@ class App extends React.Component {
   render() {
     return (
       <Wrapper>
+        <h2>Redfin Estimate for 131 FREMONT Ave</h2>
+        <LinkHomeFacts>
+        <span>Edit Home Facts </span>
+         to improve accuracy.
+        </LinkHomeFacts>
+        <LinkCreateOwner>
+          <span>Create and Owner Estimate</span>
+        </LinkCreateOwner>
         <EstimateValueHeader>
           <div>$2,474,344</div>
           <button href=''>Track This Estimate</button>
@@ -175,8 +231,8 @@ class App extends React.Component {
             <span>$1.1M </span>
                since sold in 2012
         </Heading>
+        <Span2>5 years</Span2>
         <Span1>1 year</Span1>
-        <Span2>5 year</Span2>
         <svg viewBox="0 0 670 264">
           <g>
             {/* parallel lines in graph*/}
