@@ -1,18 +1,21 @@
 import React from 'react';
 
-class LineChart extends React.Component {
+
+class Graph extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+
     }
   }
 
   render() {
     return (
-      <div></div>
+      <div>
+        Hello Graph!
+      </div>
     )
   }
-
 }
 
-export default LineChart;
+export default Graph;

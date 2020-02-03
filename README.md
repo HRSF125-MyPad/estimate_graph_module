@@ -1,4 +1,4 @@
-# myPad
+# Project Name
 
 > Project description
 
