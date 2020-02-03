@@ -1,5 +1,3 @@
-var faker = require('faker')
-
 // array for prices on one year
 var oneYearPrice = [];
 
