@@ -108,33 +108,7 @@ const Heading = styled.div`
   }
 `
 
-const Span1 = styled.span`
-  float: right;
-  font-size: 100%;
-  text-align: left;
-  vertical-align: bottom;
-  color: #999;
-  padding: .5rem 0;
-  border-bottom: .125rem solid transparent;
-  transition: all .2s ease-out 0s;
-  cursor: pointer;    
-`
 
-const Span2 = styled.span`
-  position: relative;
-  float: right;
-  font-size: 100%;
-  text-align: right;
-  font: inherit;
-  vertical-align: baseline;
-  margin-left: 1rem;
-  color: #333;
-  border-color: currentColor;
-  padding: .5rem 0;
-  border-bottom: .125rem solid transparent;
-  transition: all .2s ease-out 0s;
-  
-`
 
 class Headers extends React.Component {
   constructor(props) {
@@ -160,8 +134,7 @@ class Headers extends React.Component {
         <Heading>
           <span>$1.1M </span>since sold in 2012
         </Heading>
-        <Span2>5 years</Span2>
-        <Span1>1 year</Span1>
+        
       </Wrapper>
     )
   }
