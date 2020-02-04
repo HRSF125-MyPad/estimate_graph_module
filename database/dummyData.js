@@ -2,7 +2,7 @@
 var oneYearPrice = [];
 
 for (var i = 1; i <= 12; i++) {
-  var firstRandom = getRandomArbitrary(20, 90)
+  var firstRandom = getRandomArbitrary(1000000, 2000000)
   firstRandom = Math.floor(firstRandom)
   oneYearPrice.push(firstRandom)
 }
@@ -11,7 +11,7 @@ for (var i = 1; i <= 12; i++) {
 var fiveYearPrice = [];
 
 for (var i = 1; i <= 60; i++) {
-  var randomNum = getRandomArbitrary(10, 150);
+  var randomNum = getRandomArbitrary(1000000, 3000000);
   randomNum = Math.floor(randomNum);
   fiveYearPrice.push(randomNum);
 }
