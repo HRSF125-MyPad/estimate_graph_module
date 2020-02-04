@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Graph from '../components/graph.jsx';
+import App from '../components/App.jsx';
 
 let wrapper;
 
 beforeEach(() => {
-  wrapper = shallow(<Graph />);
+  wrapper = shallow(<App />);
 });
 
 describe('first enzyme test', () => {
