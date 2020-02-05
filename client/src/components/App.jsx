@@ -115,11 +115,28 @@ class App extends React.Component {
             <text dx="0" dy="4.97" x="622" y="178">$1.5M</text>
           </g>
           {/* <path d={data} /> */}
+
+          <polyline points="
+            20,90
+            80,100
+            130,120
+            180,130
+            230,140
+            280,150
+            320,140
+            370,145
+            420,160
+            470,155
+            550,165
+            610,150
+          "
+          /> 
         </svg>
       </Wrapper>
     )
   }
 }
-
+// x axis  make 600 > each month is at 50px increments 
+// y axis make 1 px = $11,111 base is at 1 million (so add 214px, subtract 1 million from dollar sum)
 
 export default App;

@@ -34,6 +34,13 @@ const Span2 = styled.span`
 `
 
 class Buttons extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+    }
+  }
+
+  
   render() {
     return (
       <Wrapper>
