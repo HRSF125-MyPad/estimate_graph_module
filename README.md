@@ -1,39 +1,23 @@
-# myPad
+# MyPad
 
-> Project description
+Web application that features home listings for buyers and sellers. Team project consisted of image carousel, mortgage calculator, graph estimation, and map module's. 
 
-## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+## Usage - Graph Module (Completed by Noel Mendoza)
 
-## Table of Contents
+Allows you to see in real time price estimations for current listing for the last year and up to 5 years.
 
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
+## Example
 
-## Usage
 
-> Some usage instructions
+### Development
 
-## Requirements
+- Was developed as an interactive front-end microservice utlizing JavaScript and React
+- Architected an Express proxy server that handled routing API's
+- Deployed housing microservice on EC2 utilizing AWS
 
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
+## Related Modules for Web Application
 
-- Node 6.13.0
-- etc
-
-## Development
-
-### Installing Dependencies
-
-From within the root directory:
-
-```sh
-npm install -g webpack
-npm install
-```
-
+  - https://github.com/HRSF125-MyPad/image_carousel_schedule_board_module
+  - https://github.com/HRSF125-MyPad/calculator_menu_module
+  - https://github.com/HRSF125-MyPad/image-carousel-from-static-map
